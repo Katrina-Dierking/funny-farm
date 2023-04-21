@@ -1,0 +1,88 @@
+.home {
+    overflow-x: hidden ;
+}
+
+.home section {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:350px;
+    padding: 100px 20vw;
+    z-index: -2;
+}
+
+.top, .bottom {
+    background-color:white;
+    color:black;
+}
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 36px;
+    font-weight:300;
+}
+
+.curve {
+    position:absolute;
+    height: 150px;
+    width: 100%;
+    bottom:0;
+}
+
+.curve::before, .curve::after {
+    content:'';
+    display:block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+}
+
+.curve::before {
+    background-color: white;
+    transform: translate(85%, 60%);
+    z-index:99;
+}
+.curve::after{
+    background-color: black;
+      transform: translate(-4%, 40%);
+      z-index:-1;
+}
+
+.bubble::after{
+     content: '';
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 30% 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 45%;
+        background-color: white;
+        height: 25%;
+        margin-left: -52%;
+}
+
+
+      .wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .wave svg {
+        position: relative;
+        display: block;
+        width: calc(103% + 1.3px);
+        height: 262px;
+      }
+
+      .wave .shape-fill {
+        fill: hsl(240, 3%, 6%);
+      }
+
+      .midWave {
+        fill:white;
+      }
