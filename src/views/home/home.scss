@@ -1,5 +1,17 @@
 .home {
     overflow-x: hidden ;
+    
+    .homeHead{
+
+        background-image: url("../../assets/images/circle-scatter-haikei.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 24vh;
+    }
+
+
+
+
 }
 
 .home section {
@@ -15,11 +27,15 @@
 .top, .bottom {
     background-color:white;
     color:black;
+    height: 60vh;
 }
+
 h1 {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 36px;
+    font-size: 40px;
     font-weight:300;
+    color:red;
+    text-shadow: 3px 2px 5px slategrey;
 }
 
 .curve {
@@ -80,9 +96,21 @@ h1 {
       }
 
       .wave .shape-fill {
-        fill: hsl(240, 3%, 6%);
+        fill: black;
       }
 
       .midWave {
         fill:white;
       }
+
+      .top .wave .shape-fill {
+        box-shadow: 10px 10px 10px solid red;
+        z-index: 99;
+      }
+
+.middle {
+    box-shadow: 20px 9px 10px 15px grey;
+    background-color: lightblue;
+}
+
+
