@@ -1,13 +1,17 @@
 import React from 'react'
 import './home.scss'
+import Nav from '../../components/nav/Nav';
 
 function Home() {
   return (
     <section className="home">
-      <div className="homeHead"></div>
-      <section className="top">
-        <h1>Welcome to the Funny Farm</h1>
-        <div className="wave">
+    <div className="homeHead">
+    </div>
+    <section className="top">
+    <Nav />
+  
+    <h1>Welcome to the Funny Farm</h1>
+    <div className="wave">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
