@@ -26,15 +26,16 @@ function Home() {
         </div>
       </section>
       <section className="middle">
-        MIDDLE
-        <div class="spacer layer1"></div>
+      MIDDLE
+      <div class="spacer layer1"></div>
       </section>
       <section className="bottom">
-        BOTTOM
-
-         
+      BOTTOM
+      
+      
       </section>
-    </section>
+      <Nav />
+      </section>
   );
 }
 
